@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:bu="http://bfyamada.com/budget/core/dto">
+	
+	<soapenv:Header/>
+	<soapenv:Body>
+		<bu:getBudgetRequest>
+			<bu:id>1</bu:id>
+		</bu:getBudgetRequest>
+	</soapenv:Body>	
+</soapenv:Envelope>

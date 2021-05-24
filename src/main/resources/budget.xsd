@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:tns="http://bfyamada.com/budget/core/dto" 
+targetNamespace="http://bfyamada.com/budget/core/dto"
+elementFormDefault="qualified">
+
+  <xs:element name="getBudgetRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="getBudgetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="budget" type="tns:budget"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+
+    <xs:complexType name="budget">
+      <xs:sequence>
+      	<xs:element name="id" type="xs:string"/>
+      	<xs:element name="tittle" type="xs:string"/>
+      	<xs:element name="month" type="xs:string"/>
+      	<xs:element name="value" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
